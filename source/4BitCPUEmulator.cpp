@@ -60,13 +60,13 @@ bool writeAssembly(std::istream& input, std::ostream& output)
         outCode << std::hex << std::setw(2) << std::setfill('0')<< +machineCode;
         if(nextLineCounter < 8)
         {
-            outCode << "\n";
-            nextLineCounter = 0;
+            outCode << " ";
+            nextLineCounter++;
         }
         else
         {
-            outCode << " ";
-            nextLineCounter++;
+            outCode << "\n";
+            nextLineCounter=0;
         }
         lineNum++;
         
