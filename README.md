@@ -157,7 +157,7 @@ JMP addr
 
 ---
 
-## JZ (Jump if Zero)
+## JNZ (Jump if Not Zero)
 
 **Syntax:**
 ```
@@ -166,11 +166,11 @@ JZ addr
 
 | Opcode (hex) | Mnemonic | Operand | Instruction Class | Description |
 |-------------|----------|---------|-------------------|-------------|
-| `0xA` | JZ | addr | Conditional jump | Jump if Zero flag = 1 |
+| `0xA` | JZ | addr | Conditional jump | Jump if Zero flag = 0 |
 
 ---
 
-## JNZ (Jump if Not Zero)
+## JZ (Jump if Zero)
 
 **Syntax:**
 ```
@@ -179,7 +179,7 @@ JNZ addr
 
 | Opcode (hex) | Mnemonic | Operand | Instruction Class | Description |
 |-------------|----------|---------|-------------------|-------------|
-| `0xB` | JNZ | addr | Conditional jump | Jump if Zero flag = 0 |
+| `0xB` | JNZ | addr | Conditional jump | Jump if Zero flag = 1 |
 
 ---
 
